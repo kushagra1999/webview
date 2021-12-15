@@ -21,6 +21,19 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any required interface initialization here.
+        let contentController = self.webView.configuration.userContentController
+        contentController.add(self, name: "buttonMessage")
+        let js = """
+         function geocodeAddress() {
+          
+                 webkit.messageHandlers.buttonMessage.postMessage("Data sent");
+                 
+             
+         }
+        """
+
+        let script = WKUserScript(source: js, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+        contentController.addUserScript(script)
         if let indexURL = Bundle.main.url(forResource: "index",
                                           withExtension: "html") {
             webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
@@ -33,4 +46,9 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             self.view.setNeedsLayout()
     }
 
+}
+extension NotificationViewController: WKScriptMessageHandler{
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        print(message.body)
+    }
 }
