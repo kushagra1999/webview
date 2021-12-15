@@ -13,7 +13,38 @@
 		0B9503F2276A1BA700AAB3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9503F0276A1BA700AAB3E7 /* Main.storyboard */; };
 		0B9503F4276A1BAA00AAB3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9503F3276A1BAA00AAB3E7 /* Assets.xcassets */; };
 		0B9503F7276A1BAA00AAB3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9503F5276A1BAA00AAB3E7 /* LaunchScreen.storyboard */; };
+		0B950405276A1DA100AAB3E7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B950404276A1DA100AAB3E7 /* UserNotifications.framework */; };
+		0B950407276A1DA100AAB3E7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B950406276A1DA100AAB3E7 /* UserNotificationsUI.framework */; };
+		0B95040A276A1DA100AAB3E7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B950409276A1DA100AAB3E7 /* NotificationViewController.swift */; };
+		0B95040D276A1DA100AAB3E7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B95040B276A1DA100AAB3E7 /* MainInterface.storyboard */; };
+		0B950411276A1DA100AAB3E7 /* webjs.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B950402276A1DA100AAB3E7 /* webjs.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B950417276A1FFC00AAB3E7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0B950416276A1FFC00AAB3E7 /* index.html */; };
+		0B950418276A1FFC00AAB3E7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0B950416276A1FFC00AAB3E7 /* index.html */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B95040F276A1DA100AAB3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9503DF276A1BA700AAB3E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B950401276A1DA100AAB3E7;
+			remoteInfo = webjs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B950415276A1DA100AAB3E7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B950411276A1DA100AAB3E7 /* webjs.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B9503E7276A1BA700AAB3E7 /* webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +55,13 @@
 		0B9503F3276A1BAA00AAB3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B9503F6276A1BAA00AAB3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B9503F8276A1BAA00AAB3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B950402276A1DA100AAB3E7 /* webjs.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = webjs.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B950404276A1DA100AAB3E7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0B950406276A1DA100AAB3E7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		0B950409276A1DA100AAB3E7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		0B95040C276A1DA100AAB3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0B95040E276A1DA100AAB3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B950416276A1FFC00AAB3E7 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B9503FF276A1DA100AAB3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B950407276A1DA100AAB3E7 /* UserNotificationsUI.framework in Frameworks */,
+				0B950405276A1DA100AAB3E7 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				0B9503E9276A1BA700AAB3E7 /* webview */,
+				0B950408276A1DA100AAB3E7 /* webjs */,
+				0B950403276A1DA100AAB3E7 /* Frameworks */,
 				0B9503E8276A1BA700AAB3E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0B9503E7276A1BA700AAB3E7 /* webview.app */,
+				0B950402276A1DA100AAB3E7 /* webjs.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +113,28 @@
 				0B9503F3276A1BAA00AAB3E7 /* Assets.xcassets */,
 				0B9503F5276A1BAA00AAB3E7 /* LaunchScreen.storyboard */,
 				0B9503F8276A1BAA00AAB3E7 /* Info.plist */,
+				0B950416276A1FFC00AAB3E7 /* index.html */,
 			);
 			path = webview;
+			sourceTree = "<group>";
+		};
+		0B950403276A1DA100AAB3E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B950404276A1DA100AAB3E7 /* UserNotifications.framework */,
+				0B950406276A1DA100AAB3E7 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B950408276A1DA100AAB3E7 /* webjs */ = {
+			isa = PBXGroup;
+			children = (
+				0B950409276A1DA100AAB3E7 /* NotificationViewController.swift */,
+				0B95040B276A1DA100AAB3E7 /* MainInterface.storyboard */,
+				0B95040E276A1DA100AAB3E7 /* Info.plist */,
+			);
+			path = webjs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +147,34 @@
 				0B9503E3276A1BA700AAB3E7 /* Sources */,
 				0B9503E4276A1BA700AAB3E7 /* Frameworks */,
 				0B9503E5276A1BA700AAB3E7 /* Resources */,
+				0B950415276A1DA100AAB3E7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B950410276A1DA100AAB3E7 /* PBXTargetDependency */,
 			);
 			name = webview;
 			productName = webview;
 			productReference = 0B9503E7276A1BA700AAB3E7 /* webview.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0B950401276A1DA100AAB3E7 /* webjs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B950412276A1DA100AAB3E7 /* Build configuration list for PBXNativeTarget "webjs" */;
+			buildPhases = (
+				0B9503FE276A1DA100AAB3E7 /* Sources */,
+				0B9503FF276A1DA100AAB3E7 /* Frameworks */,
+				0B950400276A1DA100AAB3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = webjs;
+			productName = webjs;
+			productReference = 0B950402276A1DA100AAB3E7 /* webjs.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +187,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					0B9503E6276A1BA700AAB3E7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0B950401276A1DA100AAB3E7 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -116,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				0B9503E6276A1BA700AAB3E7 /* webview */,
+				0B950401276A1DA100AAB3E7 /* webjs */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +219,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9503F7276A1BAA00AAB3E7 /* LaunchScreen.storyboard in Resources */,
+				0B950417276A1FFC00AAB3E7 /* index.html in Resources */,
 				0B9503F4276A1BAA00AAB3E7 /* Assets.xcassets in Resources */,
 				0B9503F2276A1BA700AAB3E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B950400276A1DA100AAB3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B95040D276A1DA100AAB3E7 /* MainInterface.storyboard in Resources */,
+				0B950418276A1FFC00AAB3E7 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B9503FE276A1DA100AAB3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B95040A276A1DA100AAB3E7 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B950410276A1DA100AAB3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B950401276A1DA100AAB3E7 /* webjs */;
+			targetProxy = 0B95040F276A1DA100AAB3E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0B9503F0276A1BA700AAB3E7 /* Main.storyboard */ = {
@@ -161,6 +280,14 @@
 				0B9503F6276A1BAA00AAB3E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B95040B276A1DA100AAB3E7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B95040C276A1DA100AAB3E7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,6 +412,7 @@
 		0B9503FC276A1BAA00AAB3E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +441,7 @@
 		0B9503FD276A1BAA00AAB3E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +467,56 @@
 			};
 			name = Release;
 		};
+		0B950413276A1DA100AAB3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5J34NR598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = webjs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = webjs;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.clevertap.webview.webjs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B950414276A1DA100AAB3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A5J34NR598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = webjs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = webjs;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.clevertap.webview.webjs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +534,15 @@
 			buildConfigurations = (
 				0B9503FC276A1BAA00AAB3E7 /* Debug */,
 				0B9503FD276A1BAA00AAB3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B950412276A1DA100AAB3E7 /* Build configuration list for PBXNativeTarget "webjs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B950413276A1DA100AAB3E7 /* Debug */,
+				0B950414276A1DA100AAB3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
