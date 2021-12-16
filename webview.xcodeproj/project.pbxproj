@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0A55E8276B4CDE006C00BF /* payload 2 2.apns in Resources */ = {isa = PBXBuildFile; fileRef = 0B0A55E7276B4CDE006C00BF /* payload 2 2.apns */; };
 		0B9503EB276A1BA700AAB3E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9503EA276A1BA700AAB3E7 /* AppDelegate.swift */; };
 		0B9503ED276A1BA700AAB3E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9503EC276A1BA700AAB3E7 /* SceneDelegate.swift */; };
 		0B9503EF276A1BA700AAB3E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9503EE276A1BA700AAB3E7 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B0A55E7276B4CDE006C00BF /* payload 2 2.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "payload 2 2.apns"; path = "../../payload 2 2.apns"; sourceTree = "<group>"; };
 		0B9503E7276A1BA700AAB3E7 /* webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9503EA276A1BA700AAB3E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B9503EC276A1BA700AAB3E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				0B9503EA276A1BA700AAB3E7 /* AppDelegate.swift */,
 				0B9503EC276A1BA700AAB3E7 /* SceneDelegate.swift */,
+				0B0A55E7276B4CDE006C00BF /* payload 2 2.apns */,
 				0B9503EE276A1BA700AAB3E7 /* ViewController.swift */,
 				0B9503F0276A1BA700AAB3E7 /* Main.storyboard */,
 				0B9503F3276A1BAA00AAB3E7 /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 			files = (
 				0B9503F7276A1BAA00AAB3E7 /* LaunchScreen.storyboard in Resources */,
 				0B950417276A1FFC00AAB3E7 /* index.html in Resources */,
+				0B0A55E8276B4CDE006C00BF /* payload 2 2.apns in Resources */,
 				0B9503F4276A1BAA00AAB3E7 /* Assets.xcassets in Resources */,
 				0B9503F2276A1BA700AAB3E7 /* Main.storyboard in Resources */,
 			);
